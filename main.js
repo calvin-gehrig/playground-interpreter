@@ -21,6 +21,10 @@ async function main() {
 	const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
 	parser.feed(program);
 
+	if (parser.results.length > 1) {
+		console.warn("This grammar contains ambiguity!!!");
+	};
+
 	const ast = parser.results[0];
 	if (print_parser_result) {
 		console.log("Parser result:\n\n")
