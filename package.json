@@ -1,0 +1,26 @@
+{
+  "name": "playground-interpreter",
+  "version": "1.0.0",
+  "description": "A project to learn how to create a programming language focusing on grammar with Nearley, providing an interpreter and its API to interpret it.",
+  "license": "ISC",
+  "author": "Calvin Gehrig",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:verbose": "jest --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"]
+  },
+  "dependencies": {
+    "moo": "^0.5.2",
+    "mz": "^2.7.0",
+    "nearley": "^2.20.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
